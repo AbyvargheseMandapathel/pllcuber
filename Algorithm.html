@@ -2,6 +2,47 @@
 <html>
  <head> 
   <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
    .center {
   display: block;
   margin-left: auto;
@@ -51,8 +92,15 @@ li a:hover {
   <u><h1 align="center"> Puzzles</h1></u>
   <br><br>
   <h1 align="center"><u><b>3x3 </b></u></h1>
-  <a href="3x3.html"><img src="3x3.jpg" alt="Paris" class="center"></a>
-                                                                      <hr>
+       <div class="dropdown">
+  <img src="logo.jpeg">
+  
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>                                                                 <hr>
   <h1 align="center"><u><b>2x2 </b></u></h1>                                                              
  <a href="comingsoon.html"><img src="download (5).jpeg" alt="2x2" class="center"><hr></a>
 </body>
